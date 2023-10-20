@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <aside class="image_sec">
+        <section class="batman">
+          <img src="./batman.jpg" width="150px" height="250px" />
+        </section>
+        <section class="think">
+          <img src="./think.jpg" width="300px" height="300px" />
+        </section>
+        <div class="batman_write">
+          Welcome to the Game.<br />
+          I'm batman
+        </div>
+        <div class="continue_btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+        </div>
+      </aside>
+      <aside class="right_content">
+        <section class="right_container">
+          <section class="dice_section">
+            <div class="left_circle">
+              <div class="circle outer_circle circle1">
+                <div class="inner_circle">
+                  <span class="score p1score">20</span>
+                </div>
+              </div>
+              <div class="player p1">Player 1</div>
+            </div>
+            <div class="right_circle">
+              <div class="circle outer_circle circle2">
+                <div class="inner_circle">
+                  <span class="score p2score">20</span>
+                </div>
+              </div>
+              <div class="player p2">Player 2</div>
+            </div>
+          </section>
+          <section class="arrows">
+            <div class="left_arrow arrow_on">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                />
+              </svg>
+            </div>
+            <div class="right_arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </div>
+          </section>
+          <section class="dice">
+            <img src="./dice-1.png" height="100px" width="100px" />
+          </section>
+          <section class="choice">
+            <div class="hold_btn btn">Hold</div>
+            <div class="roll_btn btn">Roll</div>
+          </section>
+        </section>
+      </aside>
+    </main>
+    <section class="hide">
+      <div class="overlay">
+        <div class="hidden">
+          <div class="winner_batman">
+            <img src="./batman1.png" />
+          </div>
+          <div class="cross_mark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="info">
+            <h1 class="winner_name">Player 1</h1>
+            <h1 style="color: #2d2c2a">Wins</h1>
+            <h3>I am batman</h3>
+            <button class="finish_btn">Okay</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  /* font-family: 'Nunito', sans-serif; */
+}
+main {
+  background-color: white;
+  /* z-index: 10; */
+  width: 90%;
+  /* margin: 0 auto; */
+  margin: 0px auto;
+  /* background-color: #948d86; */
+  /* max-height: 1vh; */
+
+  border-radius: 10px;
+}
+.image_sec {
+  position: relative;
+}
+.batman {
+  position: absolute;
+  top: 160px;
+  /* display: inline-block;
+  margin-top: 130px; */
+}
+.think {
+  position: absolute;
+  left: 150px;
+  /* display: inline-block; */
+  /* margin-top: -130px; */
+}
+.batman_write {
+  position: absolute;
+  width: 190px;
+  height: 150px;
+  /* background-color: aqua; */
+  padding: 20px;
+  font-size: 25px;
+  /* overflow: scroll; */
+  /* scroll-behavior: auto; */
+  left: 220px;
+  top: 60px;
+}
+.continue_btn {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  left: 350px;
+  top: 190px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+/* Arrows */
+.arrows {
+  position: absolute;
+  left: 340px;
+  top: 100px;
+}
+.arrows div {
+  width: 50px;
+  height: 20px;
+}
+.arrows div svg {
+  color: #e3a523;
+}
+.left_arrow {
+  display: none;
+}
+.right_arrow {
+  display: none;
+}
+.arrow_on {
+  display: block;
+}
+/* Dice parts */
+/* .dice_section {
+  position: absolute;
+  width: 1000px;
+  height: 480px;
+  left: 350px;
+  top: 300px;
+  background-color: blue;
+} */
+.right_content {
+  width: 50%;
+  height: 500px;
+  /* background-color: #7f8685; */
+  position: absolute;
+  left: 520px;
+  top: 150px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem;
+}
+.right_container {
+  width: 100%;
+  position: relative;
+}
+.dice_section .outer_circle {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #867d8b;
+  border-radius: 50%;
+  background-color: #867d8b;
+  background-image: #2d2c2a;
+
+  /* animation: anim 2s linear forwards; */
+  /* transition: background-image 5s ease; */
+  /* background-color: #e3a523; */
+  /* background-color: #2d2c2a; */
+}
+.dice_section .inner_circle {
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  width: 150px;
+  height: 150px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  background-color: white;
+  /* padding: 20px; */
+}
+.right_circle {
+  position: absolute;
+  left: 500px;
+}
+.dice_section .score {
+  position: absolute;
+  font-size: 70px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 38px; */
+}
+.dice {
+  position: absolute;
+  left: 314px;
+  top: 160px;
+  width: 102px;
+  border: 1px solid black;
+}
+.choice {
+  width: 700px;
+  /* height: 200px; */
+  position: absolute;
+  /* background-color: #00b300; */
+  left: 75px;
+  top: 380px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 5%;
+}
+.player {
+  font-size: 28px;
+  position: absolute;
+  width: 150px;
+}
+.p1 {
+  top: 230px;
+  left: 70px;
+}
+.p2 {
+  top: 230px;
+  left: 70px;
+}
+.btn {
+  width: 40%;
+  height: 50px;
+  border: 1px solid black;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  /* color: #7f8685; */
+  /* padding-left: 100px; */
+}
+.hold_btn {
+  background-color: #e2ad75;
+}
+.roll_btn {
+  background-color: #e2ad75;
+}
+.active.player::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #e3a523;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Game Over part */
+.hidden {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: red; */
+  backdrop-filter: blur(3px);
+}
+
+/* .active {
+  transition: transform 0.5s;
+  border-bottom: 2px solid #e3a523;
+} */
+.winner_batman img {
+  width: 50%;
+  height: 350px;
+  border-radius: 20px;
+}
+.cross_mark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 5;
+}
+.info {
+  width: 50%;
+  height: 350px;
+  position: absolute;
+  /* background-color: aqua; */
+  right: 0;
+  top: 0;
+  padding-top: 90px;
+  padding-left: 50px;
+}
+.info h1 {
+  font-size: 50px;
+  /* color: #2d2c2a; */
+}
+.winner_name {
+  color: #e3a523;
+}
+.finish_btn {
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #e2ad75;
+}
